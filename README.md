@@ -19,3 +19,19 @@ fn main() {
 ```
 
 
+```bash
+
+git clone https://github.com/nowo/wasm-hello.git
+cd wasm-hello
+
+
+# 构建
+rustup target add wasm32-wasi
+cargo build --target=wasm32-wasi
+
+# 运行
+wasmer run . --command=wasm-hello
+
+```
+
+
