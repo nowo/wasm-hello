@@ -1,0 +1,7 @@
+[package]
+name = "wasm-hello"
+version = "0.1.0"
+authors = ["nowo<z8888788@163.com>"]
+edition = "2021"
+
+[dependencies]

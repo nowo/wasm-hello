@@ -1,0 +1,22 @@
+[package]
+name = 'nowo/wasm-hello'
+version = '0.1.1'
+description = 'Description for package wasm-hello,learn wasm'
+readme = 'README.md'
+repository = "https://github.com/nowo/wasm-hello"
+homepage = "https://github.com/nowo/wasm-hello"
+
+# See more keys and definitions at https://docs.wasmer.io/registry/manifest
+
+[[module]]
+name = 'wasm-hello'
+source = 'target/wasm32-wasi/debug/wasm-hello.wasm'
+abi = 'wasi'
+
+[module.interfaces]
+wasi = '0.1.0-unstable'
+
+[[command]]
+name = 'wasm-hello'
+module = 'wasm-hello'
+runner = 'wasi'

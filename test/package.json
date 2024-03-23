@@ -1,0 +1,20 @@
+{
+    "name": "test",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "vite"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@wasmer/sdk": "^0.6.0"
+    },
+    "devDependencies": {
+        "vite": "^5.2.3"
+    }
+}
